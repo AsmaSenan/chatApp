@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ContactPage.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>images/Albert_Einstein.jpg</file>
+        <file>images/Ernest_Hemingway.jpg</file>
+        <file>images/Hans_Gude.jpg</file>
+    </qresource>
+</RCC>
