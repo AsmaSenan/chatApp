@@ -4,19 +4,21 @@ import QtQuick.Window 2.15
 
 
 Page{
+    id: root
     anchors.fill: parent
-    header: Label {
-        padding: 10
-        text: qsTr("Contacts")
-        font.pixelSize: 20
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
+    header: ToolBar {
+        Label {
+            anchors.centerIn: parent
+            padding: 10
+            text: qsTr("Contacts")
+            font.pixelSize: 20
+        }
     }
 
     ListView {
         id: listView
         anchors.fill: parent
-        topMargin: 20
+//        topMargin: 20
 //            leftMargin: 48
 //            rightMargin: 48
         bottomMargin: 20
@@ -28,6 +30,7 @@ Page{
             width: listView.width
             height: 80
             leftPadding: 60 + 32
+            onClicked: root.StackView.view.push("ConversationPage.qml", { inConversationWith: modelData })
 
             Image {
                 id: avatar

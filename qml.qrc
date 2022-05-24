@@ -2,6 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>ContactPage.qml</file>
+        <file>ConversationPage.qml</file>
     </qresource>
     <qresource prefix="/images">
         <file>images/Albert_Einstein.jpg</file>
